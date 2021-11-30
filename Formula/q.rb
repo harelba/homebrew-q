@@ -7,12 +7,10 @@ class Q < Formula
   license "GPL-3.0-or-later"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "c72ca06a7c9dbe3b3eaee1b8db72811edbf7e64fbee5b694bcf2ed7e8d877d50"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "c72ca06a7c9dbe3b3eaee1b8db72811edbf7e64fbee5b694bcf2ed7e8d877d50"
-    sha256 cellar: :any_skip_relocation, monterey:       "4511c183df36704ec7cb497b4a319409875ea2ef6068255ae2a2e0a2d7293e29"
-    sha256 cellar: :any_skip_relocation, big_sur:        "4511c183df36704ec7cb497b4a319409875ea2ef6068255ae2a2e0a2d7293e29"
-    sha256 cellar: :any_skip_relocation, catalina:       "4511c183df36704ec7cb497b4a319409875ea2ef6068255ae2a2e0a2d7293e29"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "bed14a331133ff96b85fa37e0729ca695bd273f78ee82e792185d137edf9917a"
+    root_url "https://github.com/harelba/homebrew-q/releases/download/q-3.1.6"
+    sha256 cellar: :any_skip_relocation, big_sur:      "b1e6c7b95855725d6a42eaa51cb58bacc2812ad326d4edf78c896a89166a703a"
+    sha256 cellar: :any_skip_relocation, catalina:     "d20039ec31851f03e3d4241a7b86973d255b8156199c4298e560631f9c1a919b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ccb323b44c719a1e56b88d224cb02c4ae611ecd620cd8597e903c0cd689752fa"
   end
 
   depends_on "pyoxidizer" => :build
